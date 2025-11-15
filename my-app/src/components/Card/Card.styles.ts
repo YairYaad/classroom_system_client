@@ -6,6 +6,10 @@ const useStyles = makeStyles(() =>
     card: {
       padding: '16px',
     },
+    // NEW: Style for the calendar button, aligning it right
+    scheduleButton: {
+      marginLeft: 'auto',
+    }
   }),
 );
 

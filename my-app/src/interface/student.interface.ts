@@ -3,7 +3,7 @@ export interface IStudent {
   firstName: string;
   lastName: string;
   age: number;
-  proffesion: string;
+  profession: string; // FIX: Corrected typo from 'proffesion'
   classId: string | null;
 }
 
@@ -21,19 +21,21 @@ export interface ClassCardProps {
   students: IStudent[];
 }
 
-export interface SutdentsForClassProps {
+// FIX: Corrected interface name
+export interface StudentsForClassProps { 
   open: boolean;
   onClose: () => void;
   student: IStudent;
 }
-// fix: 2 interfaces
+
 export interface Data {
   id: string;
   firstName: string;
   lastName: string;
   age: number;
-  profession: string;
+  profession: string; // FIX: Corrected typo from 'proffesion'
 }
+
 export interface ColumnData {
   dataKey: keyof Data | "assign" | "delete";
   label: string;

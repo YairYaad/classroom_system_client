@@ -1,8 +1,24 @@
+/* Inside App.css */
+
+/* Root container for the main content */
 #root {
-  max-width: 1280px;
+  max-width: 1440px; 
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0; 
   text-align: center;
+}
+
+/* Style for wrapping the main content below the NavBar */
+.page-container {
+  padding: 2rem;
+  min-height: calc(100vh - 64px); 
+  background-color: #1e1e1e; /* Consistent dark background for content area */
+  color: rgba(255, 255, 255, 0.87); 
+}
+
+/* Adjustments for general MUI Typography */
+.MuiTypography-root {
+  margin-bottom: 0.5rem;
 }
 
 .logo {
